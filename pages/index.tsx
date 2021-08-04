@@ -22,7 +22,8 @@ export default function HomePage() {
             className="fixed inset-0 object-cover w-full h-full"
             layout="fill"
           />
-          <div className="relative flex-1 px-4 py-16 mx-auto text-center bg-black bg-opacity-75 max-w-7xl sm:px-6 sm:py-12 lg:px-8 lg:pt-48">
+          <div className="fixed inset-0 w-full h-full bg-black bg-opacity-75" />
+          <div className="relative flex-1 px-4 py-16 mx-auto text-center max-w-7xl sm:px-6 sm:py-12 lg:px-8 lg:pt-48">
             <p className="flex items-center justify-center text-sm font-semibold tracking-wide text-white text-opacity-50 uppercase">
               Service
               <span className="inline-block w-0.5 opacity-50 h-3 mx-3 bg-white" />{" "}
