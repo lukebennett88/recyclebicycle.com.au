@@ -1,0 +1,37 @@
+---
+import Facebook from './icons/facebook.astro';
+import Instagram from './icons/instagram.astro';
+
+const navigation = {
+	social: [
+		{
+			name: 'Facebook',
+			href: 'https://www.facebook.com/recycles.bicycles',
+			icon: Facebook,
+		},
+		{
+			name: 'Instagram',
+			href: 'https://www.instagram.com/bicyclerecycler/',
+			icon: Instagram,
+		},
+	],
+};
+---
+
+<footer class="relative">
+	<div class="mx-auto max-w-7xl overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
+		<div class="mt-8 flex justify-center space-x-6">
+			{
+				navigation.social.map((item) => (
+					<a href={item.href} class="text-gray-400 hover:text-gray-500">
+						<span class="sr-only">{item.name}</span>
+						<item.icon class="h-6 w-6" aria-hidden="true" />
+					</a>
+				))
+			}
+		</div>
+		<p class="mt-8 text-center text-base text-gray-400">
+			&copy; {new Date().getFullYear()} Recycle Bicycle. ABN: 36 016 187 069.
+		</p>
+	</div>
+</footer>

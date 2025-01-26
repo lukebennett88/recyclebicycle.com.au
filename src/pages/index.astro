@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/layout.astro';
+import { Image } from 'astro:assets';
+import recycleBicycle from '../assets/recycle-bicycle.jpg';
+import Footer from '../components/footer.astro';
+---
+
+<Layout>
+	<main class="flex flex-1">
+		<Image
+			src={recycleBicycle}
+			alt=""
+			class="fixed inset-0 h-full w-full object-cover"
+		/>
+		<div class="fixed inset-0 h-full w-full bg-black/75"></div>
+		<div
+			class="relative mx-auto max-w-7xl flex-1 px-4 py-16 text-center sm:px-6 sm:py-12 lg:px-8 lg:pt-48"
+		>
+			<p
+				class="flex items-center justify-center text-sm font-semibold tracking-wide text-white/50 uppercase"
+			>
+				Service
+				<span class="mx-3 inline-block h-3 w-0.5 bg-white opacity-50"></span>{
+					' '
+				}
+				Sales{' '}
+				<span class="mx-3 inline-block h-3 w-0.5 bg-white opacity-50"></span>{
+					' '
+				}
+				Spares{' '}
+				<span class="mx-3 inline-block h-3 w-0.5 bg-white opacity-50"></span>{
+					' '
+				}
+				Repairs
+			</p>
+			<h1
+				class="mt-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl"
+			>
+				Recycle Bicycle
+			</h1>
+			<div class="mt-4 space-y-2">
+				<p class="text-lg font-medium text-white/50">Port Macquarie NSW</p>
+				<p class="text-lg font-medium text-white/50">
+					Any unwanted bikes needed, in any condition
+				</p>
+			</div>
+			<div class="mt-6">
+				<a
+					href="tel:0413829314"
+					class="inline-flex items-center rounded-md border border-transparent bg-white/25 px-4 py-2 text-sm font-medium text-white/75 sm:hover:bg-white/50"
+				>
+					Call Cameron: 0413 829 314
+				</a>
+			</div>
+		</div>
+	</main>
+	<Footer />
+</Layout>
